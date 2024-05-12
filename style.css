@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: white;
+}
+
+.page {
+    background-color: rgb(7, 39, 46);
+    width: 20%;
+    height: 452px;
+    margin-left: auto;
+    color: white;
+    overflow-y: auto;
+    margin-right: auto;
+}
+
+.page::-webkit-scrollbar {
+    width: 0px;
+}
+
+.page::-webkit-scrollbar-thumb {
+    background-color: rgb(42, 56, 59);
+    border-radius: 10px;
+}
+
+main {
+    min-height: 63vh;
+    /* background-color: rgb(3, 19, 23); */
+    background-color: hsl(206.25deg 30.77% 10.2%);
+    color: white;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+ul {
+    align-items: start;
+}
+
+li {
+    list-style: none;
+    margin: 5px 5px;
+}
+
+.dp {
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+.status {
+    box-shadow: 0 0 0 2px rgb(3, 19, 23), 0 0 0 4px hsla(120, 82%, 36%, 0.905);
+}
+
+.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    left: -19px;
+    top: 29px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+}
+
+.viewed {
+    box-shadow: 0 0 0 2px rgb(3, 19, 23), 0 0 0 4px rgb(80, 83, 80);
+}
+
+.viewedStatus {
+    flex-direction: column;
+}
+
+.viewedBlock {
+    display: none;
+}
+
+.block {
+    display: flex;
+    cursor: pointer;
+}
+
+.m-2 {
+    margin-top: 2px;
+}
+
+.WA {
+    text-align: center;
+    width: 37%;
+    position: relative;
+    bottom: -16px;
+    right: -4px;
+    font-size: 18px;
+}
+
+.icons {
+    width: 38%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: -20px;
+    right: -60px;
+}
+
+.input .fa-arrow-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.input .fa-arrow-left:hover {
+    background-color: rgba(108, 108, 108, 0.502);
+}
+
+header {
+    display: flex;
+}
+
+footer {
+    position: absolute;
+    top: 406px;
+    height: 46px;
+    width: 20%;
+    display: flex;
+    background-color: rgb(7, 39, 46);
+    justify-content: space-evenly;
+}
+
+.fa-message,
+.fa-podcast,
+.fa-people-group,
+.fa-phone {
+    padding-top: 14px;
+    padding-right: 23.5px;
+    padding-left: 26px;
+    padding-bottom: 29px;
+    height: 2px;
+}
+
+.fa-message:hover,
+.fa-podcast:hover,
+.fa-people-group:hover,
+.fa-phone:hover {
+    background-color: rgba(21, 71, 83, 0.594);
+}
+
+.block:hover {
+
+    background-color: rgba(55, 74, 78, 0.822);
+}
+
+.icons ion-icon {
+    position: relative;
+    bottom: 4px;
+}
+
+ion-icon:hover,
+.fa-magnifying-glass:hover,
+.fa-ellipsis-vertical:hover {
+    color: rgb(12, 78, 92);
+    ;
+}
+
+.ellipsis {
+    position: absolute;
+    border-radius: 5px 5px;
+    top: 18px;
+    width: 145px;
+    right: 0px;
+    background-color: rgb(7, 39, 44);
+    ;
+    display: none;
+    box-shadow: 0 0 0.3px 0.3px black, 0 0 0.7px 0.3px rgb(56, 55, 55);
+}
+
+.other {
+    position: absolute;
+    border-radius: 5px 5px;
+    top: 74px;
+    width: 125px;
+    left: 637px;
+    background-color: rgb(7, 39, 44);
+    display: none;
+    box-shadow: 0 0 0.3px 0.3px black, 0 0 0.7px 0.3px rgb(56, 55, 55);
+}
+
+.ellipsis li {
+    list-style: none;
+    line-height: 25px;
+    padding-left: 6px;
+    margin-left: 0;
+}
+
+.ellipsis li:hover,
+.other li:hover {
+    background-color: rgba(55, 74, 78, 0.822);
+}
+
+.Q {
+    display: none;
+    font-size: 12px;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    height: 112px;
+    width: 100%;
+}
+
+.items {
+    background-color: black;
+    display: none;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 167px;
+    margin-right: 7px;
+}
+
+.flex>:first-child {
+    font-size: 17px;
+}
+
+.flex>label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.statusMargin {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.items>div {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(7, 39, 46);
+    border-radius: 500px;
+    padding: 6px 0px;
+    margin: 6px 5px;
+}
+
+.cpointer {
+    cursor: pointer;
+}
+
+.items div:hover {
+    background-color: rgba(23, 73, 86, 0.81);
+}
+
+.input {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    margin-left: 7px;
+    padding-left: 2px;
+    border-radius: 30px;
+    height: 26px;
+    margin-top: 4px;
+    width: 238px;
+    background-color: rgb(7, 39, 46);
+}
+
+.sbar {
+    font-size: 12px;
+    width: 160px;
+    margin-left: 4px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.Q .items div>label {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.items .doc {
+    width: 95px;
+}
+
+.items i {
+    width: 15px;
+}
+
+.fa-comment,
+.fa-camera,
+.phone {
+    width: 9px;
+    height: 7px;
+    padding: 15px 15px;
+    position: absolute;
+    color: black;
+    font-size: 1.5em;
+    left: 717px;
+    top: 357px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 21px;
+    cursor: pointer;
+    padding-left: 10px;
+    background-color: hsl(120, 80%, 30%);
+    border-radius: 30%;
+}
+
+.fa-comment:hover,
+.fa-camera:hover,
+main button:hover,
+.phone:hover {
+    background-color: hsl(120, 80%, 46%);
+}
+
+.comm {
+    height: 43vh;
+    width: 20vw;
+}
+
+.comm img {
+    width: 100%;
+}
+
+.comm h3 {
+    margin-top: 7px;
+    text-align: center;
+}
+
+.comm p {
+    margin-top: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+main button {
+    font-size: 11px;
+    font-weight: 550;
+    padding: 7px 18px;
+    color: rgb(28, 25, 25);
+    border-radius: 14px;
+    margin: 0px 36px;
+    border: none;
+    background-color: hsl(111, 80%, 39%);
+}
+
+.circle {
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-right: 7px;
+    display: flex;
+    height: 38px;
+    width: 40px;
+    background-color: hsl(120, 80%, 30%);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-link {
+    color: black;
+    rotate: 20deg;
+}
+
+@media screen and (max-width:455px) {
+    .page {
+        overflow: visible;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    main,
+    header,
+    .input {
+        position: relative;
+    }
+
+    .icons {
+        right: -50px;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    main,
+    .input {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .items {
+        padding-left: 15px;
+    }
+
+    header {
+        justify-content: flex-start;
+        z-index: 10;
+        gap: 55px;
+        left: 50%;
+        margin-left: -15px;
+        transform: translateX(-50%);
+    }
+
+    footer {
+        top: 97vh;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    main {
+        height: 97vh;
+        overflow-x: hidden;
+    }
+
+    .block {
+        height: 69px;
+        align-items: start;
+    }
+
+    .dp {
+        width: 40px;
+    }
+
+    .green-i {
+        left: 275px;
+        top: 465px;
+    }
+
+    /* status */
+
+    .top {
+        padding: 0 20px;
+        justify-content: space-between;
+        margin-left: -10px;
+        width: 92vw;
+    }
+
+    .stblock {
+        margin-bottom: -15px;
+        margin: 10px 0;
+        height: 50px;
+    }
+
+    .ellipsis{
+        position: absolute;
+        right: 12px;
+        top: 18px;
+    }
+    .elp,
+    .elp1 {
+        background-color: rgb(7, 39, 46);
+        position: absolute;
+        padding: 5px 0;
+        padding-right: 16px;
+        padding-left: 3px;
+        border-radius: 5px;
+    }
+
+    .elp {
+        left: -415px;
+        bottom: 20px;
+    }
+
+    .elp1 {
+        left: 56px;
+        bottom: -20px;
+    }
+
+    .stinput {
+        display: flex;
+        background-color: rgb(27, 27, 26);
+        position: relative;
+        padding: 10px;
+        width: 92vw;
+        height: 20px;
+        gap: 10px;
+        border-radius: 25px;
+        margin-bottom: 5px;
+        margin-left: -50px;
+        align-items: center;
+        left: 100%;
+        top:-13px;
+        justify-content: flex-start;
+    }
+    .sq{
+        background-color: transparent;
+    }
+    /* community */
+    .comm{
+        height: 50vh;
+        width: 100vw;
+    }
+    main button {
+        position: absolute;
+        left: 41%;
+        transform: translateX(-50%);
+    }
+}

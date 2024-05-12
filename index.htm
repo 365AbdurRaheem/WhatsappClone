@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="WAfavicon.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9ee624314e.js" crossorigin="anonymous"></script>
+    <title>WhatsApp</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="WA" id="wa">
+                WhatsApp
+            </div>
+            <div class="icons">
+                <ion-icon class="camera cpointer" name="camera-outline" style="font-size: 1.5em;"></ion-icon>
+                <canvas id="capturedCanvas" width="640" height="480" style="display: none;"></canvas>
+                <i class="fa-solid fa-magnifying-glass cpointer"></i>
+                <i class="fa-solid fa-ellipsis-vertical cpointer"></i>
+                <div class="ellipsis">
+                    <ul>
+                        <li class="elp2">New group</li>
+                        <li class="elp2">New broadcast</li>
+                        <li class="elp2">Linked devices</li>
+                        <li class="elp2">Starred messages</li>
+                        <li class="elp2">Settings</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Q">
+                <div class="input">
+                    <i class="fa-solid fa-arrow-left cpointer" onclick="hide()"></i>
+                    <input class="sbar" type="text" placeholder="Search...">
+                </div>
+                <div class="items">
+                    <div class="cpointer"> <i class="fa-brands fa-readme"></i><label class="cpointer">Unread</label>
+                    </div>
+                    <div class="cpointer"> <i class="fa-regular fa-image"></i> <label class="cpointer">Photos</label>
+                    </div>
+                    <div class="cpointer"> <i class="fa-solid fa-video"></i> <label class="cpointer">Videos</label>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="cpointer"> <i class="fa-solid fa-paperclip"></i> <label class="cpointer">Links</label>
+                    </div>
+                    <div class="cpointer"> <i class="fa-solid fa-gift"></i><label class="cpointer">GIFs</label></div>
+                    <div class="cpointer"> <i class="fa-solid fa-headphones"></i><label class="cpointer">Audio</label>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="doc cpointer"> <i class="fa-regular fa-file-lines"></i><label
+                            class="cpointer">Documents</label></div>
+                    <div class="cpointer"> <i class="fa-solid fa-square-poll-vertical"></i><label
+                            class="cpointer">Polls</label></div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <ul>
+                <div class="block m-2" style="padding-top: 5px;">
+                    <img class="dp status" width="35px" src="AR.jpg" alt="dp">
+                    <li>Abdur Rehman</li>
+                </div>
+                <div class="block m-2">
+                    <img class="dp status" width="35px" src="jazz.jpg" alt="dp">
+                    <li>Raheem</li>
+                </div>
+                <div class="block m-2">
+                    <img class="dp" width="35px" src="rahat.jpg" alt="dp">
+                    <li>Faizan CTTC</li>
+                </div>
+                <div class="block m-2">
+                    <img class="dp status" width="35px" src="dp.png" alt="dp">
+                    <li>Sami Rajpoot</li>
+                </div>
+                <div class="block m-2">
+                    <img class="dp" width="35px" src="tel.jpg" alt="dp">
+                    <li>Abdur Raheem 2</li>
+                </div>
+                <div class="block m-2">
+                    <img class="dp status" width="35px" src="dp.png" alt="dp">
+                    <li>Colleague</li>
+                </div>
+                <div class="block m-2">
+                    <img class="dp" width="35px" src="pfai.jpg" alt="dp">
+                    <li>Abdur Rehman</li>
+                </div>
+                <div class="block m-2 " style="margin-bottom: 40px;">
+                    <img class="dp" width="35px" src="chatif.jpg" alt="dp">
+                    <li>Ch Atif</li>
+                </div>
+            </ul>
+            <i class="fa-solid fa-comment green-i"></i>
+            <footer>
+                <a href="index.htm">
+                    <i class="fa-solid fa-message"></i>
+                </a>
+                <a href="status.htm">
+                    <i class="fa-solid fa-podcast"></i>
+                </a>
+                <a href="community.htm">
+                    <i class="fa-solid fa-people-group"></i>
+                </a>
+                <a href="call.htm">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </footer>
+        </main>
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
