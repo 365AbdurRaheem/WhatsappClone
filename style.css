@@ -387,7 +387,7 @@ main button {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -49%);
+        transform: translate(-50%, -40%);
     }
     main,
     header,
