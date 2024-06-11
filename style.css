@@ -424,7 +424,7 @@ main button {
 
     footer {
         position: absolute;
-        top: 98%;
+        top: 100%;
         transform: translateY(-50%);
         display: flex;
         justify-content: space-around;
@@ -432,8 +432,8 @@ main button {
     }
 
     main {
-        /* height: 97vh; */
-        overflow-x: hidden;
+        height: 85vh;
+/*         overflow-x: hidden; */
     }
 
     .block {
