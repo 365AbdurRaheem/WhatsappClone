@@ -387,7 +387,7 @@ main button {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -49%);
     }
     main,
     header,
@@ -423,6 +423,7 @@ main button {
     }
 
     footer {
+        position: absolute;
         top: 97vh;
         display: flex;
         justify-content: space-around;
